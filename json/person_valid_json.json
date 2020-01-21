@@ -1,0 +1,21 @@
+{
+	"id": 1,
+	"name": "Tom",
+	"gender": "M",
+	"address": [{
+		"street": "street 1",
+		"state": "state 1",
+		"country": "country 1",
+		"zip": 11111
+	}, {
+		"street": "street 2",
+		"state": "state 2",
+		"country": "country 2",
+		"zip": 22222
+	}, {
+		"street": "street 3",
+		"state": "state 3",
+		"country": "country 3",
+		"zip": 33333
+	}]
+}

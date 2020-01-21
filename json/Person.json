@@ -1,0 +1,45 @@
+{
+  "type" : "object",
+  "required" : [ "name", "gender", "address", "id" ],
+  "properties" : {
+    "name" : {
+      "type" : "string",
+      "description" : "person name"
+    },
+    "gender" : {
+      "type" : "string",
+      "description" : "gender"
+    },
+    "address" : {
+      "type" : "array",
+      "items" : {
+        "type" : "object",
+        "required" : [ "street", "country", "zip", "state" ],
+        "properties" : {
+          "street" : {
+            "type" : "string",
+            "description" : "street"
+          },
+          "country" : {
+            "type" : "string"
+          },
+          "zip" : {
+            "type" : "integer",
+            "pattern" : "\\D(\\d{5})\\D"
+          },
+          "state" : {
+            "type" : "string"
+          }
+        }
+      },
+      "description" : "adress of person"
+    },
+    "id" : {
+      "type" : "integer",
+      "pattern" : "^\\d+$",
+      "maximum" : 10000,
+      "minimum" : 1
+    }
+  },
+  "$schema" : "http://json-schema.org/draft-04/schema#"
+}
